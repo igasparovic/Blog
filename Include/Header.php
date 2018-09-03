@@ -77,7 +77,7 @@
     <?php } else{
         ?>
         <ul class="actions stacked">
-            <li><a href="RegLog/Logout.php" class="button large fit">Log Out</a></li>
+            <li><a href="UserDataEntry/Logout.php" class="button large fit">Log Out</a></li>
         </ul>
     <?php
     }?>

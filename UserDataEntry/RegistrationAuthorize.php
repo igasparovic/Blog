@@ -10,7 +10,7 @@ if(isset($_POST["username"])){
     if($userexists){
         $e=true;
         $_SESSION["error"] = "The username is taken";
-        header("location: RegistrationLogin.php");
+        header("location: ../Registration.php");
         exit();
     }
 }
@@ -23,7 +23,7 @@ if(isset($_POST["usermail"])){
     if($mailexists){
         $e=true;
         $_SESSION["error"] = "This e-mail address is already registered";
-        header("location: RegistrationLogin.php");
+        header("location: ../Registration.php");
         exit();
     }
 }
@@ -33,13 +33,13 @@ if(isset($_POST["password"]) and isset($_POST["reppassword"])) {
         echo("All fields are required");
         $e = true;
         $_SESSION["error"] = "All fields are required";
-        header("location: RegistrationLogin.php");
+        header("location: ../Registration.php");
         exit();
     }
     if (($_POST["password"]) != ($_POST["reppassword"])) {
         $e = true;
         $_SESSION["error"] = "Passwords do not match";
-        header("location: RegistrationLogin.php");
+        header("location: ../Registration.php");
         exit();
     }
 }
@@ -59,7 +59,7 @@ if ($e == false) {
             'validation' => $validation
         ));
         mkdir('../userfiles/' . $username);
-
+        header("location: ../Login.php");
 
 
 }
