@@ -44,6 +44,11 @@
                 <section>
                     <ul class="links">
                         <li>
+                            <a href="CreateBlogPost.php">
+                                <h3>New Blog</h3>
+                            </a>
+                        </li>
+                        <li>
                             <a href="Profile.php">
                                 <h3>Profile</h3>
                             </a>
@@ -53,6 +58,7 @@
                                 <h3>Settings</h3>
                             </a>
                         </li>
+
                         <?php if(isset($_SESSION["admin"])){ ?>
                         <li>
                             <a href="#">

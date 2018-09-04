@@ -1,5 +1,5 @@
 <?php include_once "Config.php";
-if(isset($_SESSION["username"])){
+if(isset($_SESSION["username"])){ ;
 }else { header("location: index.php");}
 ?>
 
@@ -13,11 +13,11 @@ if(isset($_SESSION["username"])){
             <?php include_once "Include/Header.php"?>
             <!-- Main -->
             <div id="main">
-                    <form method="post" action="SaveBlogPost.php">
+                    <form method="post" action="UserDataEntry/SaveBlogPost.php">
                         <textarea name="content" id="editor">
                         </textarea>
-                        <input type="button" name="SavePost" id="SavePost" value="Save">
-                        <input type="button" name="SaveDraft" id="SaveDraft" value="Draft">
+                        <input type="submit" name="SavePost" id="SavePost" value="Save">
+                        <input type="submit" name="SaveDraft" id="SaveDraft" value="Draft">
                     </form>
             </div>
         </div>

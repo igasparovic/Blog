@@ -1,5 +1,4 @@
 <?php
-
 /*
  * CKFinder Configuration File
  *
@@ -66,8 +65,8 @@ $config['images'] = array(
 $config['backends'][] = array(
     'name'         => 'default',
     'adapter'      => 'local',
-    'baseUrl'      => '/Blog/userfiles/'. $_SESSION['username']. '/',
-//  'root'         => '', // Can be used to explicitly set the CKFinder user files directory.
+    'baseUrl'      => '/Blog/userfiles/',
+    //'root'         => '/Blog/userfiles/', // Can be used to explicitly set the CKFinder user files directory.
     'chmodFiles'   => 0777,
     'chmodFolders' => 0755,
     'filesystemEncoding' => 'UTF-8',

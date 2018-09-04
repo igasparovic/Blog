@@ -11,7 +11,8 @@
 				<!-- Main -->
 					<div id="<?php echo $divid ?>">
 						<!-- Post -->
-							<div style="text-align: center;"><article class="post">
+							<div style="text-align: center;">
+                                <article class="post">
 								<header>
 									<div class="title">
 										<h2><a href="#">Tree</a></h2>
@@ -19,7 +20,7 @@
 									</div>
 								</header>
 								<a href="#" class="image featured"><img src="Include/images/tree.jpg" alt="" /></a>
-								<p>Stop "treeing" about and start your blog, so your thoughts can live in someone else's mind!</p>
+								<p>random post</p>
 								<footer>
 									<ul class="actions">
 										<li><a href="#" class="button large">Continue Reading</a></li>
@@ -29,7 +30,8 @@
 										<li><a href="#" class="icon fa-comment">128</a></li>
 									</ul>
 								</footer>
-							</article></div>
+							</article>
+                            </div>
 					</div>
 				<!-- Sidebar -->
                 <?php if(isset($_SESSION["username"])){include_once "Include/Sidebar.php";} ?>
