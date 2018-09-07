@@ -27,7 +27,7 @@ if(isset($_SESSION["username"])){
                             <label for = "file" id = "filelabel" class="button icon fa-upload"><span>Head picture</span></label><i> &nbsp; only .jpg format allowed</i>
                         </p>
                         <label>Blog:</label>
-                        <textarea name="content" id="editor">
+                        <textarea name="content" id="editor" required>
                             <?php if(isset($_SESSION["draft"])){print_r($draft->post);}?>
                         </textarea>
                         <input type="submit" name="SavePost" id="SavePost" value="Save">
