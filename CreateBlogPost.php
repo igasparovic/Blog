@@ -14,6 +14,16 @@ if(isset($_SESSION["username"])){ ;
             <!-- Main -->
             <div id="main">
                     <form method="post" action="UserDataEntry/SaveBlogPost.php">
+
+                        <label>Title: <br><input type="text" name="title" required></label>
+                        <label>Summary: <br><input type="text" name="Summary"></label>
+
+                        <p>
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label for = "file" id = "filelabel" class="button icon fa-upload"><span>Head picture</span></label><i> &nbsp; only .jpg format allowed</i>
+
+                        </p>
+                        <label>Blog:</label>
                         <textarea name="content" id="editor">
                         </textarea>
                         <input type="submit" name="SavePost" id="SavePost" value="Save">

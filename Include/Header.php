@@ -8,6 +8,7 @@
             <li><a href="#">Showcase</a></li>
             <li><a href="#">Features</a></li>
             <li><a href="#">About</a></li>
+            <li><a href="MyBlog.php">My Blog</a></li>
         </ul>
     </nav>
     <nav class="main">

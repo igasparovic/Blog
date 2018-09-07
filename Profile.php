@@ -15,6 +15,8 @@ if(isset($_SESSION["username"])){
     <!-- Main -->
     <div id="main">
 
+
+    </div>
     <!-- Sidebar -->
     <?php include_once "Include/Sidebar.php"?>
 </div>
