@@ -44,10 +44,23 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
     }
 
     try {
-        $insert = $connection->prepare("INSERT INTO blogposts (username, post,title,summary,headpicture, timestamp,draft ) VALUES 
-                                         (:username, :post,:title,:summary,:headpicture, current_timestamp,:draft )");
+        if(isset($_SESSION["draft"])){
+            $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
 
-        $insert->execute(array(
+            $update->execute(array(
+                'username' => $username,
+                'post' => $post,
+                'title' => $title,
+                'summary' => $summary,
+                'headpicture' => $headImg,
+                'draft' => $draft,
+                'postid'=> $_SESSION["draft"]
+            ));
+            $_SESSION["draft"] = null;
+        }else {
+            $insert = $connection->prepare("INSERT INTO blogposts (username, post,title,summary,headpicture, timestamp,draft ) VALUES 
+                                         (:username, :post,:title,:summary,:headpicture, current_timestamp,:draft )");
+            $insert->execute(array(
                 'username' => $username,
                 'post' => $post,
                 'title' => $title,
@@ -56,20 +69,26 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                 'draft' => $draft
             ));
         }
+
+        }
         catch (PDOException $e) {
-            echo "Cant";
+            echo $e;
         }
 
         if($draft == true) {
-            $returnQuerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND title=:title AND post=:post");
-            $returnQuerry->execute(array(
-               'username' => $username,
-               'title' => $title,
-               'post' => $post
-            ));
-            $draftResult = $returnQuerry->fetch(PDO::FETCH_OBJ);
-            $_SESSION["draftE"] =  $draftResult->postid;
-            header("location: ../CreateBlogPost.php");
+            if(isset($_SESSION["draft"])){
+                header("location: ../CreateBlogPost.php");
+            }else {
+                $returnQuerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND title=:title AND post=:post");
+                $returnQuerry->execute(array(
+                    'username' => $username,
+                    'title' => $title,
+                    'post' => $post
+                ));
+                $draftResult = $returnQuerry->fetch(PDO::FETCH_OBJ);
+                $_SESSION["draft"] = $draftResult->postid;
+                header("location: ../CreateBlogPost.php");
+            }
         } else {
             header("location: ../MyBlog.php");
         }
