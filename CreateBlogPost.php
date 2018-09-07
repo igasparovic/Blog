@@ -18,7 +18,7 @@ if(isset($_SESSION["username"])){
             <?php include_once "Include/Header.php"?>
             <!-- Main -->
             <div id="main">
-                    <?php if(isset($SESSION["error"])){echo $_SESSION["error"];}?>
+                    <label><?php if(isset($_SESSION["error"])){echo( $_SESSION["error"]);}?></label>
                     <form method="post" action="UserDataEntry/SaveBlogPost.php" enctype="multipart/form-data" >
                         <label>Title: <br><input type="text" name="title" minlength="3" maxlength="15" value="<?php if(isset($_SESSION["draft"])){print_r($draft->title);}?>" required></label>
                         <label>Summary: <br><input type="text" name="summary" maxlength="30" value="<?php if(isset($_SESSION["draft"])){print_r($draft->summary);}?>"></label>
