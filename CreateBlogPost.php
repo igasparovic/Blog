@@ -13,7 +13,7 @@ if(isset($_SESSION["username"])){ ;
             <?php include_once "Include/Header.php"?>
             <!-- Main -->
             <div id="main">
-                    <form method="post" action="UserDataEntry/SaveBlogPost.php">
+                    <form method="post" action="UserDataEntry/SaveBlogPost.php" enctype="multipart/form-data" >
                         <label>Title: <br><input type="text" name="title" minlength="3" maxlength="15" required></label>
                         <label>Summary: <br><input type="text" name="Summary" maxlength="30"></label>
                         <p>

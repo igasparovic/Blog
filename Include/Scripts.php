@@ -3,6 +3,7 @@
 <script src="assets/js/breakpoints.min.js"></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/Custom.js"></script>
 <script>
     ClassicEditor
         .create( document.querySelector( '#editor' ), {
