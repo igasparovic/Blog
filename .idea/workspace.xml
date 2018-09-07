@@ -11,8 +11,6 @@
     <list default="true" id="580678df-1bf9-4c31-b90f-fc2be88cf090" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CreateBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/CreateBlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Include/Scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Scripts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyBlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyBlog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -50,8 +48,17 @@
       <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1037">
-              <caret line="61" column="130" selection-start-line="61" selection-start-column="130" selection-end-line="61" selection-end-column="130" />
+            <state relative-caret-position="690">
+              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginAuthorize.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserDataEntry/LoginAuthorize.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -68,17 +75,17 @@
       <file leaf-file-name="CreateBlogPost.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CreateBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserSettings.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/UserSettings.php">
+      <file leaf-file-name="UserSettingsUpdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserDataEntry/UserSettingsUpdate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+            <state relative-caret-position="17">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -118,6 +125,7 @@
       <find>textarea</find>
       <find>height</find>
       <find>config</find>
+      <find>headIMG</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -332,7 +340,7 @@
       <workItem from="1535890260103" duration="571000" />
       <workItem from="1535958487584" duration="8117000" />
       <workItem from="1536045736930" duration="2803000" />
-      <workItem from="1536314580498" duration="14995000" />
+      <workItem from="1536314580498" duration="19391000" />
     </task>
     <task id="LOCAL-00001" summary="Blog">
       <created>1535959083346</created>
@@ -362,11 +370,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536325325075</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Blog">
+      <created>1536332179519</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1536332179519</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Blog">
+      <created>1536333184002</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1536333184002</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="264345000" />
+    <option name="totallyTimeSpent" value="268741000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -656,20 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserDataEntry/LoginAuthorize.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/Custom.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -684,24 +692,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserDataEntry/UserSettingsUpdate.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-255">
-          <caret column="5" lean-forward="true" selection-start-column="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        <state relative-caret-position="442">
+          <caret line="26" column="41" lean-forward="true" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -712,17 +706,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" lean-forward="true" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserDataEntry/LoginAuthorize.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="35" lean-forward="true" selection-start-column="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserDataEntry/UserSettingsUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CreateBlogPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="130" selection-start-line="61" selection-start-column="130" selection-end-line="61" selection-end-column="130" />
+        <state relative-caret-position="690">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="44" />
         </state>
       </provider>
     </entry>

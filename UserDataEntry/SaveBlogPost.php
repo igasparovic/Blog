@@ -2,16 +2,18 @@
 include_once "../Config.php";
 
 if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["content"] != null)) {
-    if(isset($_POST["SaveDraft"])){
-        $draft = true;
-    }else{
-        $draft = false;
-    }
+
     $username = $_SESSION["username"];
     $post = $_POST["content"];
     $title = $_POST["title"];
     $summary = $_POST["summary"];
     $draft = false;
+    $headImg= "/images/nophoto.jpg";
+    if(isset($_POST["SaveDraft"])){
+        $draft = true;
+    }else{
+        $draft = false;
+    }
     if (isset($_FILES["file"])) {
         $picName = $_FILES["file"]["name"];
         $picTmpName = $_FILES["file"]["tmp_name"];
@@ -27,17 +29,17 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                     if ($width > 1280 or $height > 720){
                         unlink("../userfiles/" . $username ."/". $picName);
                         $_SESSION["error"] = "Image is too large";
-                        $_draft = true;
+                        $draft = true;
                     }else{
                         $headImg = "/userfiles/". $username . "/" . $picName;
                     }
             } else {
                 $_SESSION["error"] = "File is too big";
-                $_draft = true;
+                $draft = true;
             }
         } else {
             $_SESSION["error"] = "Wrong format, only .jpg is allowed";
-            $_draft = true;
+            $draft = true;
         }
     }
 
