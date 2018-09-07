@@ -60,11 +60,14 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
 
         if($draft == true) {
             $returnQuerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND title=:title AND post=:post");
-            $draftReturn = $returnQuerry->execute(array(
+            $returnQuerry->execute(array(
                'username' => $username,
                'title' => $title,
                'post' => $post
             ));
+            $draftResult = $returnQuerry->fetch(PDO::FETCH_OBJ);
+            $_SESSION["draftE"] =  $draftResult->postid;
+            header("location: ../CreateBlogPost.php");
         } else {
             header("location: ../MyBlog.php");
         }
