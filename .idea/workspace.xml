@@ -9,8 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="580678df-1bf9-4c31-b90f-fc2be88cf090" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/CreateBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/CreateBlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,17 +37,17 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+            <state relative-caret-position="697">
+              <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="86" column="58" lean-forward="true" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+            <state relative-caret-position="499">
+              <caret line="102" column="58" lean-forward="true" selection-start-line="102" selection-start-column="58" selection-end-line="102" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -57,16 +56,19 @@
         <entry file="file://$PROJECT_DIR$/CreateBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyBlog.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyBlog.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MyBlog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
+            <state relative-caret-position="221">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,8 +157,8 @@
         <option value="$PROJECT_DIR$/Include/Header.php" />
         <option value="$PROJECT_DIR$/Profile.php" />
         <option value="$PROJECT_DIR$/Include/Scripts.php" />
-        <option value="$PROJECT_DIR$/MyBlog.php" />
         <option value="$PROJECT_DIR$/CreateBlogPost.php" />
+        <option value="$PROJECT_DIR$/MyBlog.php" />
         <option value="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" />
       </list>
     </option>
@@ -174,7 +176,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="11" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -308,6 +310,7 @@
       <workItem from="1535958487584" duration="8117000" />
       <workItem from="1536045736930" duration="2803000" />
       <workItem from="1536314580498" duration="29666000" />
+      <workItem from="1536398790124" duration="5449000" />
     </task>
     <task id="LOCAL-00001" summary="Blog">
       <created>1535959083346</created>
@@ -379,11 +382,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536349186699</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Blog">
+      <created>1536399021592</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1536399021592</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Blog">
+      <created>1536403643372</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1536403643372</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="279016000" />
+    <option name="totallyTimeSpent" value="284465000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -395,7 +412,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
@@ -405,7 +422,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32943678" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.20469083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.20682302" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" x="1401" y="67" width="382" height="941" id="Database" order="3" type="FLOATING" weight="0.19895834" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.18763326" />
@@ -600,12 +617,12 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ckeditor/ckeditor.js.map">
-      <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret column="1355" lean-forward="true" selection-start-column="1355" selection-end-column="1355" />
         </state>
       </provider>
+      <provider editor-type-id="sourcemapFileViewerProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ckeditor/ckeditor.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -715,31 +732,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="37" lean-forward="true" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="31" lean-forward="true" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CreateBlogPost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="86" column="58" lean-forward="true" selection-start-line="86" selection-start-column="58" selection-end-line="86" selection-end-column="58" />
+        <state relative-caret-position="499">
+          <caret line="102" column="58" lean-forward="true" selection-start-line="102" selection-start-column="58" selection-end-line="102" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
