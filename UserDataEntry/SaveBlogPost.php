@@ -92,6 +92,10 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         }
     }
     if (isset($_POST["SaveDraft"])) {
+        $username = $_SESSION["username"];
+        $post = $_POST["content"];
+        $title = $_POST["title"];
+        $summary = $_POST["summary"];
         $draft = true;
         $headImg = "/images/nophoto.jpg";
         if (isset($_FILES["file"])){
