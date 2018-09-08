@@ -4,14 +4,3 @@
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main.js"></script>
 <script src="assets/js/Custom.js"></script>
-<script>
-    ClassicEditor
-        .create( document.querySelector( '#editor' ), {
-            ckfinder: {
-                uploadUrl: '/Blog/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files&responseType=json'
-            }
-        }  )
-        .catch( error => {
-            console.error( error );
-        } );
-</script>

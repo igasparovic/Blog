@@ -35,6 +35,10 @@ if(isset($_SESSION["username"])){
                     </form>
             </div>
         </div>
+        <script>
+            var editor = CKEDITOR.replace( 'editor' );
+            CKFinder.setupCKEditor( editor );
+        </script>
             <!-- Scripts -->
             <?php include_once "Include/Scripts.php"?>
     </body>
