@@ -132,6 +132,8 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                     'headpicture' => $headImg,
                     'draft' => $draft
                 ));
+                $_SESSION["draft"] = null;
+                header("location: ../MyBlog.php");
             }
 
         } catch (PDOException $e) {
