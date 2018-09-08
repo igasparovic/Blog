@@ -36,10 +36,8 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                             </footer>
                         </article>
                     </div>
-
                 </div>
             </div>
-        <!-- Sidebar -->
         <!-- Scripts -->
         <?php include_once "Include/Scripts.php"?>
         </body>
