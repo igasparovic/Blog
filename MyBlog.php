@@ -1,5 +1,5 @@
 <?php include_once "Config.php";
-if(isset($_SESSION["username"])){
+if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
     $blogquerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND draft=:draft");
     $blogquerry->execute(array('username' => $_SESSION["username"], 'draft' => false));
     $posts = $blogquerry->fetchAll(PDO::FETCH_ASSOC);
@@ -30,8 +30,11 @@ if(isset($_SESSION["username"])){
                             if($key == 'headpicture'){
                                 $headpicture = $value;
                             }
+                            if($key == 'postid'){
+                                $postid = $value;
+                            }
                         }?>
-                            <div style="text-align: center;">
+                            <div>
                                 <article class="post">
                                     <header>
                                         <div class="title">
@@ -42,7 +45,7 @@ if(isset($_SESSION["username"])){
                                     <a href="#" class="image featured"><img src="<?php echo $headpicture; ?>" alt="" /></a>
                                     <footer>
                                         <ul class="actions">
-                                            <li><a href="#" class="button large">Continue Reading</a></li>
+                                            <li><a href="ViewPost.php?id=<?php echo $postid; ?>" class="button large">Continue Reading</a></li>
                                         </ul>
                                         <ul class="stats">
                                             <li><a href="#" class="icon fa-heart">28</a></li>

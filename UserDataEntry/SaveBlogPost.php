@@ -23,7 +23,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                     $fileDestination = "../userfiles/" . $username . "/" . $picName;
                     move_uploaded_file($picTmpName, $fileDestination);
                     list($width, $height) = getimagesize("../userfiles/" . $username . "/" . $picName);
-                    if ($width > 1280 or $height > 720) {
+                    if ($width > 500 or $height > 200) {
                         unlink("../userfiles/" . $username . "/" . $picName);
                         $_SESSION["error"] = "Image is too large";
                         $error = true;
