@@ -9,7 +9,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $summary = $_POST["summary"];
         $error = false;
         $draft = false;
-        $headImg = "/images/nophoto.jpg";
+        $headImg = "images/nophoto.jpg";
 
         if (isset($_FILES["file"])) {
             $picName = $_FILES["file"]["name"];
@@ -28,7 +28,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                         $_SESSION["error"] = "Image is too large";
                         $error = true;
                     } else {
-                        $headImg = "/userfiles/" . $username . "/" . $picName;
+                        $headImg = "userfiles/" . $username . "/" . $picName;
                     }
                 } else {
                     $_SESSION["error"] = "File is too big";
@@ -97,13 +97,13 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $title = $_POST["title"];
         $summary = $_POST["summary"];
         $draft = true;
-        $headImg = "/images/nophoto.jpg";
+        $headImg = "images/nophoto.jpg";
         if (isset($_FILES["file"])){
                 $picName = $_FILES["file"]["name"];
                 $picTmpName = $_FILES["file"]["tmp_name"];
                 $fileDestination = "../userfiles/" . $username . "/" . $picName;
                 move_uploaded_file($picTmpName, $fileDestination);
-                $headImg = "/userfiles/" . $username . "/" . $picName;
+                $headImg = "userfiles/" . $username . "/" . $picName;
         }
 
         try {
