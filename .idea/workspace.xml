@@ -7,9 +7,8 @@
   <component name="ChangeListManager">
     <list default="true" id="580678df-1bf9-4c31-b90f-fc2be88cf090" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CreateBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/CreateBlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/Poofpoo/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userfiles/Poofpoo/avatar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyBlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/MyBlog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/ViewPost.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,11 +42,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+            <state relative-caret-position="-582">
+              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ViewDrafts.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ViewDrafts.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewPost.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PreviewPost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -61,38 +78,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Head.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Include/Head.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scripts.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Include/Scripts.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyBlog.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MyBlog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="476">
+              <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ViewPost.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ViewPost.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ViewPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+            <state relative-caret-position="561">
+              <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -135,8 +134,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Home.php" />
-        <option value="$PROJECT_DIR$/User profile.php" />
         <option value="$PROJECT_DIR$/RegistrationCompletion.php" />
         <option value="$PROJECT_DIR$/Index.php" />
         <option value="$PROJECT_DIR$/HTML practice map/Index.php" />
@@ -176,9 +173,7 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Include/Header.php" />
         <option value="$PROJECT_DIR$/Profile.php" />
-        <option value="$PROJECT_DIR$/MyBlog.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/ViewPost.php" />
         <option value="$PROJECT_DIR$/ckfinder/config.php" />
         <option value="$PROJECT_DIR$/ckeditor/build-config.js" />
         <option value="$PROJECT_DIR$/ckeditor/config.js" />
@@ -186,6 +181,10 @@
         <option value="$PROJECT_DIR$/Include/Head.php" />
         <option value="$PROJECT_DIR$/CreateBlogPost.php" />
         <option value="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" />
+        <option value="$PROJECT_DIR$/ViewDrafts.php" />
+        <option value="$PROJECT_DIR$/PreviewPost.php" />
+        <option value="$PROJECT_DIR$/MyBlog.php" />
+        <option value="$PROJECT_DIR$/ViewPost.php" />
       </list>
     </option>
   </component>
@@ -202,7 +201,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="11" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -329,7 +328,7 @@
       <workItem from="1536437289177" duration="4442000" />
       <workItem from="1536441822172" duration="1646000" />
       <workItem from="1536443573800" duration="3249000" />
-      <workItem from="1536475541907" duration="2125000" />
+      <workItem from="1536475541907" duration="3226000" />
     </task>
     <task id="LOCAL-00001" summary="Blog">
       <created>1535959083346</created>
@@ -457,11 +456,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536446226998</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Blog">
+      <created>1536477900363</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1536477900363</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Blog">
+      <created>1536478331247</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1536478331247</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="306374000" />
+    <option name="totallyTimeSpent" value="307475000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,20 +539,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/CustomFileInputs/CustomFileInputs/js/jquery.custom-file-input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/util.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10013">
-          <caret line="589" column="11" selection-start-line="589" selection-start-column="11" selection-end-line="589" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../RPGcreator-master/RPGcreator-master/profile/saveProfilePicture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -721,17 +720,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ViewPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ckeditor/plugins/simage/plugin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -749,6 +745,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ViewDrafts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-582">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="17" selection-end-line="37" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Include/Head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -763,24 +780,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog.php">
+    <entry file="file://$PROJECT_DIR$/PreviewPost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/MyBlog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        <state relative-caret-position="476">
+          <caret line="47" column="57" lean-forward="true" selection-start-line="47" selection-start-column="57" selection-end-line="47" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
+    <entry file="file://$PROJECT_DIR$/ViewPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        <state relative-caret-position="561">
+          <caret line="33" column="37" lean-forward="true" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
         </state>
       </provider>
     </entry>

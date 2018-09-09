@@ -23,10 +23,9 @@
 								<p>random post</p>
 								<footer>
 									<ul class="actions">
-										<li><a href="#" class="button large">Continue Reading</a></li>
+										<li><a href="#" class="button large">Read</a></li>
 									</ul>
 									<ul class="stats">
-										<li><a href="#" class="icon fa-heart">28</a></li>
 										<li><a href="#" class="icon fa-comment">128</a></li>
 									</ul>
 								</footer>
