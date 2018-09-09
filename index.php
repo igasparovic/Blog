@@ -20,7 +20,6 @@
 									</div>
 								</header>
 								<a href="#" class="image featured"><img src="Include/images/tree.jpg" alt="" /></a>
-								<p>random post</p>
 								<footer>
 									<ul class="actions">
 										<li><a href="#" class="button large">Read</a></li>
