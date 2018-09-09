@@ -2,7 +2,7 @@
 include_once "../Config.php";
 
 if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["content"] != null)) {
-    if (isset($_POST["SavePost"]) or isset($_POST["SaveDraft"])) {
+    if (isset($_POST["SavePost"]) or isset($_POST["SaveDraft"]) or isset($_POST["Preview"])) {
         $username = $_SESSION["username"];
         $post = $_POST["content"];
         $title = $_POST["title"];
@@ -78,13 +78,16 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
             if (isset($_SESSION["draft"])) {
                 if(isset($_POST["SaveDraft"])){
                     header("location: ../ViewDrafts.php");
-                }else {
+                }elseif(isset($_POST["Preview"])) {
+                    header("location: ../PreviewPost.php");
+                }
+                else{
                     header("location: ../CreateBlogPost.php");
                 }
             } else {
                 if(isset($_POST["SaveDraft"])){
                     header("location: ../ViewDrafts.php");
-                }else {
+                } else {
                     $returnQuerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND title=:title AND post=:post");
                     $returnQuerry->execute(array(
                         'username' => $username,
@@ -93,12 +96,18 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                     ));
                     $draftResult = $returnQuerry->fetch(PDO::FETCH_OBJ);
                     $_SESSION["draft"] = $draftResult->postid;
-                    header("location: ../CreateBlogPost.php");
+                    if(isset($_POST["Preview"])) {
+                        header("location: ../PreviewPost.php");
+                    }else {
+                        header("location: ../CreateBlogPost.php");
+                    }
                 }
             }
         } else {
             if(isset($_POST["SaveDraft"])){
                 header("location: ../ViewDrafts.php");
+            }elseif(isset($_POST["Preview"])) {
+                header("location: ../PreviewPost.php");
             }else {
                 $_SESSION["draft"] = null;
                 header("location: ../MyBlog.php");
