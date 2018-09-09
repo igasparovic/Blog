@@ -8,128 +8,8 @@
     <list default="true" id="580678df-1bf9-4c31-b90f-fc2be88cf090" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CreateBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/CreateBlogPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Include/Head.php" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Head.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Include/Scripts.php" beforeDir="false" afterPath="$PROJECT_DIR$/Include/Scripts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/build-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/ckeditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/ckeditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/colordialog/dialogs/colordialog.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/copyformatting/cursors/cursor-disabled.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/copyformatting/cursors/cursor.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/copyformatting/styles/copyformatting.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/div/dialogs/div.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/find/dialogs/find.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/flash/dialogs/flash.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/flash/images/placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/checkbox.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/form.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/hiddenfield.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/radio.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/textarea.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/dialogs/textfield.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/forms/images/hiddenfield.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/iframe/dialogs/iframe.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/iframe/images/placeholder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/image/dialogs/image.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/image/images/noimage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/liststyle/dialogs/liststyle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/pagebreak/images/pagebreak.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/preview/preview.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_address.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_blockquote.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_div.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_h6.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_p.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/showblocks/images/block_pre.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/dialogs/smiley.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angel_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angel_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angry_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/angry_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/broken_heart.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/broken_heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/confused_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/confused_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/cry_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/cry_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/devil_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/devil_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embaressed_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embarrassed_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/embarrassed_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/envelope.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/envelope.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/heart.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/heart.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/kiss.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/kiss.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/lightbulb.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/lightbulb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/omg_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/omg_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/regular_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/regular_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/sad_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/sad_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/shades_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/shades_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/teeth_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/teeth_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_down.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_up.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/thumbs_up.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tongue_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tongue_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/tounge_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/whatchutalkingabout_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/wink_smile.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/smiley/images/wink_smile.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/templates/dialogs/templates.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/default.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/images/template1.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/images/template2.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/templates/templates/images/template3.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/icons.png" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/icons_hidpi.png" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ckfinder/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/ckfinder/config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/data/Files/image(1).jpg.cache" beforeDir="false" afterPath="$PROJECT_DIR$/userfiles/.ckfinder/cache/data/Files/image(1).jpg.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/data/Files/image(2).jpg.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/data/Files/image(3).jpg.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/data/Files/image(4).jpg.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image(1).jpg/image(1)__150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image(1).jpg/image(1)__150x150.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image(1).jpg/image(1)__500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image(2).jpg/image(2)__150x150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image(2).jpg/image(2)__500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image(3).jpg/image(3)__150x150.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image(3).jpg/image(3)__500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/image.jpg/image__500x500.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/.ckfinder/cache/thumbs/Files/pexels-photo-248797.jpeg/pexels-photo-248797__500x500.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/Poofpoo/asdasd.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/files/image(1).jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userfiles/files/image(1).jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/files/image(2).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/files/image(3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/userfiles/files/image(4).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/userfiles/Poofpoo/avatar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/userfiles/Poofpoo/avatar.jpg" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -157,17 +37,17 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="170">
+              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="58" />
+            <state relative-caret-position="587">
+              <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -175,8 +55,8 @@
       <file leaf-file-name="CreateBlogPost.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CreateBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="649">
-              <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+            <state relative-caret-position="714">
+              <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -190,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Scripts.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Scripts.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Include/Scripts.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -298,14 +178,14 @@
         <option value="$PROJECT_DIR$/Profile.php" />
         <option value="$PROJECT_DIR$/MyBlog.php" />
         <option value="$PROJECT_DIR$/assets/css/main.css" />
-        <option value="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" />
         <option value="$PROJECT_DIR$/ViewPost.php" />
         <option value="$PROJECT_DIR$/ckfinder/config.php" />
         <option value="$PROJECT_DIR$/ckeditor/build-config.js" />
         <option value="$PROJECT_DIR$/ckeditor/config.js" />
-        <option value="$PROJECT_DIR$/CreateBlogPost.php" />
         <option value="$PROJECT_DIR$/Include/Scripts.php" />
         <option value="$PROJECT_DIR$/Include/Head.php" />
+        <option value="$PROJECT_DIR$/CreateBlogPost.php" />
+        <option value="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" />
       </list>
     </option>
   </component>
@@ -322,7 +202,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="11" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -333,7 +213,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -355,6 +234,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -448,7 +328,8 @@
       <workItem from="1536398790124" duration="15896000" />
       <workItem from="1536437289177" duration="4442000" />
       <workItem from="1536441822172" duration="1646000" />
-      <workItem from="1536443573800" duration="2570000" />
+      <workItem from="1536443573800" duration="3249000" />
+      <workItem from="1536475541907" duration="2125000" />
     </task>
     <task id="LOCAL-00001" summary="Blog">
       <created>1535959083346</created>
@@ -569,11 +450,18 @@
       <option name="project" value="LOCAL" />
       <updated>1536436709886</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Blog">
+      <created>1536446226998</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1536446226998</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="303570000" />
+    <option name="totallyTimeSpent" value="306374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -595,7 +483,7 @@
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32897604" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32897604" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.21321961" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49891067" visible="true" weight="0.2153518" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" x="1401" y="67" width="382" height="941" id="Database" order="3" type="FLOATING" weight="0.19895834" />
       <window_info id="Structure" order="1" sideWeight="0.50108933" side_tool="true" weight="0.18763326" />
@@ -833,13 +721,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MyBlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ViewPost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -851,38 +732,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CreateBlogPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Include/Head.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -896,7 +745,42 @@
     <entry file="file://$PROJECT_DIR$/Include/Scripts.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Include/Head.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreateBlogPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="17" lean-forward="true" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MyBlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="98" column="16" lean-forward="true" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -2,7 +2,7 @@
 include_once "../Config.php";
 
 if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["content"] != null)) {
-    if (isset($_POST["SavePost"])) {
+    if (isset($_POST["SavePost"]) or isset($_POST["SaveDraft"])) {
         $username = $_SESSION["username"];
         $post = $_POST["content"];
         $title = $_POST["title"];
@@ -10,7 +10,9 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $error = false;
         $draft = false;
         $headImg = "images/nophoto.jpg";
-
+        if(isset($_POST["SaveDraft"])){
+            $draft = true;
+        }
         if (isset($_FILES["file"])) {
             $picName = $_FILES["file"]["name"];
             $picTmpName = $_FILES["file"]["tmp_name"];
@@ -23,7 +25,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                     $fileDestination = "../userfiles/" . $username . "/" . $picName;
                     move_uploaded_file($picTmpName, $fileDestination);
                     list($width, $height) = getimagesize("../userfiles/" . $username . "/" . $picName);
-                    if ($width > 500 or $height > 200) {
+                    if ($width > 860 or $height > 640) {
                         unlink("../userfiles/" . $username . "/" . $picName);
                         $_SESSION["error"] = "Image is too large";
                         $error = true;
@@ -74,70 +76,33 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
 
         if ($error == true) {
             if (isset($_SESSION["draft"])) {
-                header("location: ../CreateBlogPost.php");
+                if(isset($_POST["SaveDraft"])){
+                    header("location: ../ViewDrafts.php");
+                }else {
+                    header("location: ../CreateBlogPost.php");
+                }
             } else {
-                $returnQuerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND title=:title AND post=:post");
-                $returnQuerry->execute(array(
-                    'username' => $username,
-                    'title' => $title,
-                    'post' => $post
-                ));
-                $draftResult = $returnQuerry->fetch(PDO::FETCH_OBJ);
-                $_SESSION["draft"] = $draftResult->postid;
-                header("location: ../CreateBlogPost.php");
+                if(isset($_POST["SaveDraft"])){
+                    header("location: ../ViewDrafts.php");
+                }else {
+                    $returnQuerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND title=:title AND post=:post");
+                    $returnQuerry->execute(array(
+                        'username' => $username,
+                        'title' => $title,
+                        'post' => $post
+                    ));
+                    $draftResult = $returnQuerry->fetch(PDO::FETCH_OBJ);
+                    $_SESSION["draft"] = $draftResult->postid;
+                    header("location: ../CreateBlogPost.php");
+                }
             }
         } else {
-            $_SESSION["draft"] = null;
-            header("location: ../MyBlog.php");
-        }
-    }
-    if (isset($_POST["SaveDraft"])) {
-        $username = $_SESSION["username"];
-        $post = $_POST["content"];
-        $title = $_POST["title"];
-        $summary = $_POST["summary"];
-        $draft = true;
-        $headImg = "images/nophoto.jpg";
-        if (isset($_FILES["file"])){
-                $picName = $_FILES["file"]["name"];
-                $picTmpName = $_FILES["file"]["tmp_name"];
-                $fileDestination = "../userfiles/" . $username . "/" . $picName;
-                move_uploaded_file($picTmpName, $fileDestination);
-                $headImg = "userfiles/" . $username . "/" . $picName;
-        }
-
-        try {
-            if (isset($_SESSION["draft"])) {
-                $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
-
-                $update->execute(array(
-                    'username' => $username,
-                    'post' => $post,
-                    'title' => $title,
-                    'summary' => $summary,
-                    'headpicture' => $headImg,
-                    'draft' => $draft,
-                    'postid' => $_SESSION["draft"]
-                ));
-                $_SESSION["draft"] = null;
-                header("location: ../MyBlog.php");
-            } else {
-                $insert = $connection->prepare("INSERT INTO blogposts (username, post,title,summary,headpicture, timestamp,draft ) VALUES 
-                                                                 (:username, :post,:title,:summary,:headpicture, current_timestamp,:draft )");
-                $insert->execute(array(
-                    'username' => $username,
-                    'post' => $post,
-                    'title' => $title,
-                    'summary' => $summary,
-                    'headpicture' => $headImg,
-                    'draft' => $draft
-                ));
+            if(isset($_POST["SaveDraft"])){
+                header("location: ../ViewDrafts.php");
+            }else {
                 $_SESSION["draft"] = null;
                 header("location: ../MyBlog.php");
             }
-
-        } catch (PDOException $e) {
-            echo $e;
         }
     }
 }

@@ -32,6 +32,8 @@ if(isset($_SESSION["username"])){
                         </textarea>
                         <input type="submit" name="SavePost" id="SavePost" value="Save">
                         <input type="submit" name="SaveDraft" id="SaveDraft" value="Draft">
+                        <input type="submit" name="Preview" id="Preview" value="Preview">
+                        <input type="submit" name="Cancel" id="Cancel" value="Cancel">
                     </form>
             </div>
         </div>
