@@ -2,6 +2,8 @@
 include_once "../Config.php";
 
 if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["content"] != null)) {
+
+
     if (isset($_POST["SavePost"]) or isset($_POST["SaveDraft"]) or isset($_POST["Preview"])) {
         $username = $_SESSION["username"];
         $post = $_POST["content"];
@@ -114,4 +116,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
             }
         }
     }
+}else{
+    $_SESSION["error"] = "Blog needs to have at least a title and some body text to be saved as draft.";
+    header("location: ../CreateBlogPost.php");
 }

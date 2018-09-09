@@ -50,6 +50,11 @@
                             </a>
                         </li>
                         <li>
+                            <a href="ViewDrafts.php">
+                                <h3>View drafts</h3>
+                            </a>
+                        </li>
+                        <li>
                             <a href="Profile.php">
                                 <h3>Profile</h3>
                             </a>

@@ -42,7 +42,7 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                                             <p><?php echo $summary; ?></p>
                                         </div>
                                     </header>
-                                    <a href="#" class="image featured"><img src="<?php echo $headpicture; ?>" alt="" /></a>
+                                    <a href="ViewPost.php?id=<?php echo $postid; ?>" class="image featured"><img src="<?php echo $headpicture; ?>" alt="" /></a>
                                     <footer>
                                         <ul class="actions">
                                             <li><a href="ViewPost.php?id=<?php echo $postid; ?>" class="button large">Read</a></li>

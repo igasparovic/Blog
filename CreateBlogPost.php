@@ -18,10 +18,10 @@ if(isset($_SESSION["username"])){
             <?php include_once "Include/Header.php"?>
             <!-- Main -->
             <div id="main">
-                    <label><?php if(isset($_SESSION["error"])){echo( $_SESSION["error"]);}?></label>
+                    <label><?php if(isset($_SESSION["error"])){echo( $_SESSION["error"]);$_SESSION["error"] = null; }?></label>
                     <form method="post" action="UserDataEntry/SaveBlogPost.php" enctype="multipart/form-data" >
                         <label>Title: <br><input type="text" name="title" minlength="3" maxlength="15" value="<?php if(isset($_SESSION["draft"])){print_r($draft->title);}?>" required></label>
-                        <label>Summary: <br><input type="text" name="summary" maxlength="30" value="<?php if(isset($_SESSION["draft"])){print_r($draft->summary);}?>"></label>
+                        <label>Summary: <br><input type="text" name="summary" maxlength="100" value="<?php if(isset($_SESSION["draft"])){print_r($draft->summary);}?>"></label>
                         <p>
                             <input type="file" name="file" id="file" class="inputfile" />
                             <label for = "file" id = "filelabel" class="button icon fa-upload"><span>Head picture</span></label><i> &nbsp; only .jpg format allowed</i>
