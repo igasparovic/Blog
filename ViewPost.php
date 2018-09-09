@@ -30,7 +30,7 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                             <div style="text-align: center;"><p><?php echo ($post->post)?></p></div>
                             <footer>
                                 <ul class="stats">
-                                    <li><a href="#" class="icon fa-comment">128</a></li>
+                                    <li><a href="#" class="icon fa-comment"><?php echo $post->commentNum ?></a></li>
                                 </ul>
                             </footer>
                         </article>

@@ -33,6 +33,9 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                             if($key == 'postid'){
                                 $postid = $value;
                             }
+                            if($key == 'commentNum'){
+                                $commentNum = $value;
+                            }
                         }?>
                             <div>
                                 <article class="post">
@@ -48,7 +51,7 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                                             <li><a href="ViewPost.php?id=<?php echo $postid; ?>" class="button large">Read</a></li>
                                         </ul>
                                         <ul class="stats">
-                                            <li><a href="#" class="icon fa-comment">128</a></li>
+                                            <li><a href="#" class="icon fa-comment"><?php echo $commentNum ?></a></li>
                                         </ul>
                                     </footer>
                                 </article>
