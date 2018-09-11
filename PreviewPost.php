@@ -8,32 +8,37 @@ if(isset($_SESSION["username"]) AND isset($_SESSION["draft"])){
 <!DOCTYPE HTML>
 <html>
 <?php include_once "Include/Head.php"?>
-    <body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <body class="is-preload">
+            <div id="index">
+                <article class="post">
+                    <header>
+                        <div class="title">
+                            <h2><a href="#"><?php echo $post->title; ?></a></h2>
+                            <p><?php echo $post->summary; ?></p>
+                        </div>
+                    </header>
+                    <a href="#" class="image featured"><img src="<?php echo $post->headpicture; ?>" alt="" /></a>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="#" class="button large">Read</a></li>
+                        </ul>
+                        <ul class="stats">
+                            <li><a href="#" class="icon fa-comment"><?php echo $post->commentNum ?></a></li>
+                        </ul>
+                    </footer>
+                </article>
+            </div>
+    </div>
     <!-- Wrapper -->
         <div id="wrapper">
             <!-- Header -->
             <?php include_once "Include/Header.php"?>
             <!-- Main -->
-            <div id="main">
-                        <article class="post">
-                            <header>
-                                <div class="title">
-                                    <h2><a href="#"><?php echo $post->title; ?></a></h2>
-                                    <p><?php echo $post->summary; ?></p>
-                                </div>
-                            </header>
-                            <a href="ViewPost.php?id=<?php echo $post->postid; ?>" class="image featured"><img src="<?php echo $post->headpicture; ?>" alt="" /></a>
-                            <footer>
-                                <ul class="actions">
-                                    <li><a href="ViewPost.php?id=<?php echo $post->postid; ?>" class="button large">Read</a></li>
-                                </ul>
-                                <ul class="stats">
-                                    <li><a href="#" class="icon fa-comment"><?php echo $post->commentNum ?></a></li>
-                                </ul>
-                            </footer>
-                        </article>
 
-                        <article class="post">
+            <div id="main">
+                    <article class="post">
                         <header>
                             <div class="title">
                                 <h2><a href="#"><?php echo $post->title; ?></a></h2>
@@ -51,6 +56,9 @@ if(isset($_SESSION["username"]) AND isset($_SESSION["draft"])){
                             </ul>
                         </footer>
                     </article>
+                <article class="post">
+                    <a href="CreateBlogPost.php" class="button icon"><span class="name">Continue Editing</span></a>
+                </article>
             </div>
         </div>
     <!-- Scripts -->

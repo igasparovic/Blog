@@ -19,6 +19,7 @@ if(isset($_GET["d"]) AND $_GET["d"] == 1) {$_SESSION["draft"] = null;}
             <!-- Header -->
             <?php include_once "Include/Header.php"?>
             <!-- Main -->
+
             <div id="main">
                     <label><?php if(isset($_SESSION["error"])){echo( $_SESSION["error"]);$_SESSION["error"] = null; }?></label>
                     <form method="post" action="UserDataEntry/SaveBlogPost.php" enctype="multipart/form-data" >
@@ -32,10 +33,10 @@ if(isset($_GET["d"]) AND $_GET["d"] == 1) {$_SESSION["draft"] = null;}
                         <textarea name="content" id="editor" required>
                             <?php if(isset($_SESSION["draft"])){print_r($draft->post);}?>
                         </textarea>
-                        <input type="submit" name="SavePost" id="SavePost" value="Save">
+                        <input type="submit" name="SavePost" id="SavePost" value="Post">
                         <input type="submit" name="SaveDraft" id="SaveDraft" value="Draft">
                         <input type="submit" name="Preview" id="Preview" value="Preview">
-                        <input type="submit" name="Cancel" id="Cancel" value="Cancel">
+                        <input type="submit" name="Cancel" id="Cancel" value="Discard">
                     </form>
             </div>
         </div>

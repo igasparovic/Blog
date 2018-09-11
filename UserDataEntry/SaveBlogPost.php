@@ -11,7 +11,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $error = false;
         $draft = false;
         $headImg = "images/nophoto.jpg";
-        if(isset($_POST["SaveDraft"])){
+        if(isset($_POST["SaveDraft"]) OR isset($_POST["Preview"]) ){
             $draft = true;
         }
         if (isset($_FILES["file"])) {
