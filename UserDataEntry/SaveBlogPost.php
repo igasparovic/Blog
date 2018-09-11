@@ -3,7 +3,6 @@ include_once "../Config.php";
 
 if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["content"] != null)) {
 
-
     if (isset($_POST["SavePost"]) or isset($_POST["SaveDraft"]) or isset($_POST["Preview"])) {
         $username = $_SESSION["username"];
         $post = $_POST["content"];
@@ -109,6 +108,14 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
             if(isset($_POST["SaveDraft"])){
                 header("location: ../ViewDrafts.php");
             }elseif(isset($_POST["Preview"])) {
+                $returnQuerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND title=:title AND post=:post");
+                $returnQuerry->execute(array(
+                    'username' => $username,
+                    'title' => $title,
+                    'post' => $post
+                ));
+                $draftResult = $returnQuerry->fetch(PDO::FETCH_OBJ);
+                $_SESSION["draft"] = $draftResult->postid;
                 header("location: ../PreviewPost.php");
             }else {
                 $_SESSION["draft"] = null;

@@ -1,10 +1,12 @@
 <?php include_once "Config.php";
 if(isset($_SESSION["username"])){
-    if(isset($_SESSION["draft"])){
+if(isset($_GET["d"]) AND $_GET["d"] == 1) {$_SESSION["draft"] = null;}
+    if (isset($_SESSION["draft"])) {
         $draftQuery = $connection->prepare("SELECT * FROM blogposts WHERE postid=:postid");
         $draftQuery->execute(array('postid' => $_SESSION{"draft"}));
         $draft = $draftQuery->fetch(PDO::FETCH_OBJ);
     }
+
 }else { header("location: index.php");}
 ?>
 

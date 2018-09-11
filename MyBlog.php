@@ -3,14 +3,11 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
     $blogquerry = $connection->prepare("SELECT * FROM blogposts WHERE username=:username AND draft=:draft");
     $blogquerry->execute(array('username' => $_SESSION["username"], 'draft' => false));
     $posts = $blogquerry->fetchAll(PDO::FETCH_ASSOC);
-    $count = $blogquerry->rowCount();
-    $i=0;
 }else { header("location: index.php");}
 ?>
 <!DOCTYPE HTML>
 <html>
 <?php include_once "Include/Head.php"?>
-
     <body class="is-preload">
         <!-- Wrapper -->
             <div id="wrapper">
@@ -19,8 +16,8 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                     <!-- Main -->
                     <div id="main">
                         <!-- Post -->
-                        <?php while($i<$count) {
-                        foreach ($posts[$i] as $key => $value) {
+                        <?php foreach($posts as $post) {
+                        foreach ($post as $key => $value) {
                             if ($key == 'title'){
                                 $title = $value;
                             }
@@ -57,7 +54,7 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                                 </article>
                             </div>
                         <?php
-                                $i++;
+
                             }?>
                     </div>
                 <!-- Sidebar -->

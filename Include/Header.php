@@ -45,7 +45,8 @@
                 <section>
                     <ul class="links">
                         <li>
-                            <a href="CreateBlogPost.php">
+                            <?php if(isset($_SESSION["draft"])){$d = 1;}else{$d=0;} ?>
+                            <a href="<?php echo("CreateBlogPost.php?d=".$d);?>">
                                 <h3>New Blog</h3>
                             </a>
                         </li>
