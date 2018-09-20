@@ -33,15 +33,15 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         if(isset($_POST["SaveDraft"]) OR isset($_POST["Preview"]) ){
             $draft = true;
         }
-        if(isset($_FILES["file"])) {
+        if(isset($_FILES["file"]) AND $picExists == false) {
             $picName = $_FILES["file"]["name"];
             $picTmpName = $_FILES["file"]["tmp_name"];
             $picSize = $_FILES["file"]["size"];
             $picExt = explode('.', $picName);
             $picActualExt = strtolower(end($picExt));
-            $allowed = array('jpg', 'jpeg');
+            $allowed = array('jpg', 'jpeg', 'png', 'gif');
             if (in_array($picActualExt, $allowed)) {
-                if ($picSize < 5000000) {
+                if ($picSize < 500000) {
                     $fileDestination = "../userfiles/" . $username . "/" . $picName;
                         $size = getimagesize($picTmpName);
                         $src = imagecreatefromstring(file_get_contents($picTmpName));
@@ -50,12 +50,14 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                         imagejpeg($dst, $picTmpName, 100); // adjust format as needed
                         move_uploaded_file($picTmpName, $fileDestination);
                         $headImg = "userfiles/" . $username . "/" . $picName;
-                    }
-                } else {
-                    $headImg = "userfiles/" . $username . "/" . $picName;
+                    }else {
                     $_SESSION["error"] = "File is too big";
                     $error = true;
-                }
+                    }
+                } else {
+                $_SESSION["error"] = "Wrong format, allowed formats are jpg,jpeg,png and gif.";
+                $error = true;
+            }
             } else {
                 $_SESSION["error"] = "Wrong format for head picture, only .jpg is allowed";
                 $error = true;
