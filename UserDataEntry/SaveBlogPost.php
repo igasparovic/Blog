@@ -10,18 +10,24 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $summary = $_POST["summary"];
         $error = false;
         $draft = false;
-        $picExists = false;
+        $exists = false;
+        $replace= false;
         if(isset($_SESSION["draft"])){
             $picQuery = $connection->prepare("SELECT headpicture FROM blogposts WHERE postid=:postid");
             $picQuery->execute(array('postid' => $_SESSION{"draft"}));
             $picture = $picQuery->fetch(PDO::FETCH_OBJ);
+            $headImg = $picture->headpicture;
         }
         if (isset($_SESSION["draft"]) AND isset($_FILES["file"])) {
-            $headImg = $picture->headpicture;
             $picName = $_FILES["file"]["name"];
             $fileDestination = "userfiles/" . $username . "/" . $picName;
             if($headImg === $fileDestination){
-                $picExists = true;
+                $exists = true;
+                $oldpic = rename($fileDestination, "OldPicture" );
+            }else {
+                if ($headImg !== "images/nophoto.jpg") {
+                    $replace = true;
+                }
             }
         }else {
             if (isset($_SESSION["draft"])){
@@ -33,7 +39,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         if(isset($_POST["SaveDraft"]) OR isset($_POST["Preview"]) ){
             $draft = true;
         }
-        if(isset($_FILES["file"]) AND $picExists == false) {
+        if(isset($_FILES["file"])) {
             $picName = $_FILES["file"]["name"];
             $picTmpName = $_FILES["file"]["tmp_name"];
             $picSize = $_FILES["file"]["size"];
@@ -44,13 +50,26 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                 if (in_array($picActualExt, $allowed)) {
                     if ($picSize < 500000) {
                         $fileDestination = "../userfiles/" . $username . "/" . $picName;
+                            if($exists == true){
+                                unlink($oldpic);
+                            }
+                            if($replace == true){
+                                unlink($headImg);
+                            }
                             move_uploaded_file($picTmpName, $fileDestination);
                             $headImg = "userfiles/" . $username . "/" . $picName;
+
                         }else {
+                        if ($exists == true){
+                            rename($oldpic, $fileDestination);
+                        }
                         $_SESSION["error"] = "File is too big";
                         $error = true;
                         }
                     } else {
+                            if ($exists == true){
+                                rename($oldpic, $fileDestination);
+                            }
                     $_SESSION["error"] = "Wrong format, allowed formats are jpg,jpeg,png and gif.";
                     $error = true;
                 }

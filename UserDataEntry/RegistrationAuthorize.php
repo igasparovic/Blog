@@ -58,7 +58,7 @@ if ($e == false) {
             'email' => $_POST['usermail'],
             'validation' => $validation
         ));
-        mkdir('../userfiles/' . $username);
+        mkdir('../userfiles/' . $username, 0775);
         header("location: ../Login.php");
 
 
