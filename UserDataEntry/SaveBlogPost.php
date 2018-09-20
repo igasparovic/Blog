@@ -40,27 +40,20 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
             $picExt = explode('.', $picName);
             $picActualExt = strtolower(end($picExt));
             $allowed = array('jpg', 'jpeg', 'png', 'gif');
-            if (in_array($picActualExt, $allowed)) {
-                if ($picSize < 500000) {
-                    $fileDestination = "../userfiles/" . $username . "/" . $picName;
-                        $size = getimagesize($picTmpName);
-                        $src = imagecreatefromstring(file_get_contents($picTmpName));
-                        $dst = imagecreatetruecolor($width, $height);
-                        imagecopyresampled($dst, $src, 0, 0, 0, 0, $width, $height, $size[0], $size[1]);
-                        imagejpeg($dst, $picTmpName, 100); // adjust format as needed
-                        move_uploaded_file($picTmpName, $fileDestination);
-                        $headImg = "userfiles/" . $username . "/" . $picName;
-                    }else {
-                    $_SESSION["error"] = "File is too big";
+            list($width,$height) = getimagesize($picTmpName);
+                if (in_array($picActualExt, $allowed)) {
+                    if ($picSize < 500000) {
+                        $fileDestination = "../userfiles/" . $username . "/" . $picName;
+                            move_uploaded_file($picTmpName, $fileDestination);
+                            $headImg = "userfiles/" . $username . "/" . $picName;
+                        }else {
+                        $_SESSION["error"] = "File is too big";
+                        $error = true;
+                        }
+                    } else {
+                    $_SESSION["error"] = "Wrong format, allowed formats are jpg,jpeg,png and gif.";
                     $error = true;
-                    }
-                } else {
-                $_SESSION["error"] = "Wrong format, allowed formats are jpg,jpeg,png and gif.";
-                $error = true;
-            }
-            } else {
-                $_SESSION["error"] = "Wrong format for head picture, only .jpg is allowed";
-                $error = true;
+                }
             }
         if ($error == true) {
             $draft = true;

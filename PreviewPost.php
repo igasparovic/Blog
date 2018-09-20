@@ -49,7 +49,7 @@ if(isset($_SESSION["username"]) AND isset($_SESSION["draft"])){
                                 <a href="#" class="author"><span class="name"><?php echo $post->username ?></span><img src="userfiles/<?php echo $_SESSION["username"];?>/avatar.jpg" alt="" /></a>
                             </div>
                         </header>
-                        <div style="text-align: center;"><p><?php echo ($post->post)?></p></div>
+                        <p><?php echo ($post->post)?></p>
                         <footer>
                             <ul class="stats">
                                 <li><a href="#" class="icon fa-comment"><?php echo $post->commentNum ?></a></li>

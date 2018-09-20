@@ -5,9 +5,11 @@
     <option name="SHOW_STRUCTURE" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="580678df-1bf9-4c31-b90f-fc2be88cf090" name="Default" comment="Blog">
+    <list default="true" id="580678df-1bf9-4c31-b90f-fc2be88cf090" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PreviewPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/PreviewPost.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ViewPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/ViewPost.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,8 +46,17 @@
       <file leaf-file-name="SaveBlogPost.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+            <state relative-caret-position="1224">
+              <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserSettingsUpdate.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserDataEntry/UserSettingsUpdate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="35" column="107" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -53,7 +64,7 @@
       <file leaf-file-name="Header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Include/Header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="561">
               <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
             </state>
           </provider>
@@ -98,8 +109,17 @@
       <file leaf-file-name="ViewPost.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ViewPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+            <state relative-caret-position="510">
+              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewPost.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PreviewPost.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -185,12 +205,12 @@
         <option value="$PROJECT_DIR$/Include/Scripts.php" />
         <option value="$PROJECT_DIR$/Include/Head.php" />
         <option value="$PROJECT_DIR$/ViewDrafts.php" />
-        <option value="$PROJECT_DIR$/ViewPost.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/ckfinder/config.php" />
         <option value="$PROJECT_DIR$/MyBlog.php" />
         <option value="$PROJECT_DIR$/Include/Header.php" />
         <option value="$PROJECT_DIR$/CreateBlogPost.php" />
+        <option value="$PROJECT_DIR$/ViewPost.php" />
         <option value="$PROJECT_DIR$/PreviewPost.php" />
         <option value="$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php" />
       </list>
@@ -339,7 +359,7 @@
       <workItem from="1536475541907" duration="17653000" />
       <workItem from="1536672694984" duration="3896000" />
       <workItem from="1536686070793" duration="10107000" />
-      <workItem from="1537433031214" duration="307000" />
+      <workItem from="1537433031214" duration="3371000" />
     </task>
     <task id="LOCAL-00001" summary="Blog">
       <created>1535959083346</created>
@@ -530,11 +550,25 @@
       <option name="project" value="LOCAL" />
       <updated>1536687756234</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Blog">
+      <created>1537433561233</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1537433561233</updated>
+    </task>
+    <task id="LOCAL-00029" summary="Blog">
+      <created>1537435291330</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1537435291330</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336212000" />
+    <option name="totallyTimeSpent" value="339276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserDataEntry/UserSettingsUpdate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Profile.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -794,13 +821,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PreviewPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="32" column="10" lean-forward="true" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -808,10 +828,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ckfinder/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1309">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Include/Header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
+        <state relative-caret-position="561">
           <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserDataEntry/UserSettingsUpdate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="35" column="107" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="107" />
         </state>
       </provider>
     </entry>
@@ -829,20 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ViewPost.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ckfinder/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MyBlog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -850,10 +870,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ViewPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PreviewPost.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="24" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/UserDataEntry/SaveBlogPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="49" lean-forward="true" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+        <state relative-caret-position="1224">
+          <caret line="72" column="19" lean-forward="true" selection-start-line="72" selection-start-column="19" selection-end-line="72" selection-end-column="19" />
         </state>
       </provider>
     </entry>
