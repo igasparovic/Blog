@@ -10,30 +10,49 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $summary = $_POST["summary"];
         $error = false;
         $draft = false;
-        $headImg = "images/nophoto.jpg";
+        $picExists = false;
+        if(isset($_SESSION["draft"])){
+            $picQuery = $connection->prepare("SELECT headpicture FROM blogposts WHERE postid=:postid");
+            $picQuery->execute(array('postid' => $_SESSION{"draft"}));
+            $picture = $picQuery->fetch(PDO::FETCH_OBJ);
+        }
+        if (isset($_SESSION["draft"]) AND isset($_FILES["file"])) {
+            $headImg = $picture->headpicture;
+            $picName = $_FILES["file"]["name"];
+            $fileDestination = "userfiles/" . $username . "/" . $picName;
+            if($headImg === $fileDestination){
+                $picExists = true;
+            }
+        }else {
+            if (isset($_SESSION["draft"])){
+                $headImg = $picture->headpicture;
+            }else{
+                $headImg = "images/nophoto.jpg";
+            }
+        }
         if(isset($_POST["SaveDraft"]) OR isset($_POST["Preview"]) ){
             $draft = true;
         }
-        if (isset($_FILES["file"])) {
+        if(isset($_FILES["file"])) {
             $picName = $_FILES["file"]["name"];
             $picTmpName = $_FILES["file"]["tmp_name"];
             $picSize = $_FILES["file"]["size"];
             $picExt = explode('.', $picName);
             $picActualExt = strtolower(end($picExt));
-            $allowed = array('jpg');
+            $allowed = array('jpg', 'jpeg');
             if (in_array($picActualExt, $allowed)) {
-                if ($picSize < 500000) {
+                if ($picSize < 5000000) {
                     $fileDestination = "../userfiles/" . $username . "/" . $picName;
-                    move_uploaded_file($picTmpName, $fileDestination);
-                    list($width, $height) = getimagesize("../userfiles/" . $username . "/" . $picName);
-                    if ($width > 860 or $height > 640) {
-                        unlink("../userfiles/" . $username . "/" . $picName);
-                        $_SESSION["error"] = "Image is too large";
-                        $error = true;
-                    } else {
+                        $size = getimagesize($picTmpName);
+                        $src = imagecreatefromstring(file_get_contents($picTmpName));
+                        $dst = imagecreatetruecolor($width, $height);
+                        imagecopyresampled($dst, $src, 0, 0, 0, 0, $width, $height, $size[0], $size[1]);
+                        imagejpeg($dst, $picTmpName, 100); // adjust format as needed
+                        move_uploaded_file($picTmpName, $fileDestination);
                         $headImg = "userfiles/" . $username . "/" . $picName;
                     }
                 } else {
+                    $headImg = "userfiles/" . $username . "/" . $picName;
                     $_SESSION["error"] = "File is too big";
                     $error = true;
                 }
@@ -41,7 +60,6 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                 $_SESSION["error"] = "Wrong format for head picture, only .jpg is allowed";
                 $error = true;
             }
-        }
         if ($error == true) {
             $draft = true;
         }
