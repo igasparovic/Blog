@@ -1,5 +1,8 @@
 <?php include_once "Config.php";
 if(isset($_SESSION["username"])){
+    if(isset($_GET["id"])){
+        $_SESSION["draft"] = $_GET["id"];
+    }
 if(isset($_GET["d"]) AND $_GET["d"] == 1) {$_SESSION["draft"] = null;}
     if (isset($_SESSION["draft"])) {
         $draftQuery = $connection->prepare("SELECT * FROM blogposts WHERE postid=:postid");
