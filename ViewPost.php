@@ -24,7 +24,7 @@ if(isset($_SESSION["username"]) or isset($_SESSION["visitor"])){
                                 </div>
                                 <div class="meta">
                                     <time class="published" datetime="2015-11-01"><?php echo $post->timestamp ?></time>
-                                    <a href="#" class="author"><span class="name"><?php echo $post->username ?></span><img src="userfiles/<?php echo $_SESSION["username"];?>/avatar.jpg" alt="" /></a>
+                                    <a href="#" class="author"><span class="name"><?php echo $post->username ?></span><img src="userfiles/<?php echo $post->username;?>/avatar.jpg" alt="" /></a>
                                 </div>
                             </header>
                             <p><?php echo ($post->post)?></p>
