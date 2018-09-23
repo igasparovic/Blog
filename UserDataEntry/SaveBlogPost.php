@@ -12,13 +12,14 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $draft = false;
         $exists = false;
         $replace= false;
+        $update = null;
         if(isset($_SESSION["draft"])){
             $picQuery = $connection->prepare("SELECT headpicture FROM blogposts WHERE postid=:postid");
             $picQuery->execute(array('postid' => $_SESSION{"draft"}));
             $picture = $picQuery->fetch(PDO::FETCH_OBJ);
             $headImg = $picture->headpicture;
         }
-        if (isset($_SESSION["draft"]) AND isset($_FILES["file"])) {
+        if (isset($_SESSION["draft"]) AND isset($_FILES["file"]) AND $_FILES["file"]["name"] != null ) {
             $picName = $_FILES["file"]["name"];
             $fileDestination = "userfiles/" . $username . "/" . $picName;
             if($headImg === $fileDestination){
@@ -76,21 +77,66 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
             }
         if ($error == true) {
             $draft = true;
+            if(isset($_SESSION["edit"]) AND isset($_POST["SavePost"])){
+                $update = false;
+            }
+        }else{
+            if(isset($_SESSION["edit"]) AND isset($_POST["SavePost"])){
+                $update = true;
+                $draftQuery = $connection->prepare("SELECT * FROM blogposts WHERE postid=:postid");
+                $draftQuery->execute(array('postid' => $_SESSION{"draft"}));
+                $draft = $draftQuery->fetch(PDO::FETCH_OBJ);
+                $originalID = $draft->editid;
+            }
         }
-        try {
-            if (isset($_SESSION["draft"]) AND !isset($_SESSION["edit"])) {
-                $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
 
-                $update->execute(array(
-                    'username' => $username,
-                    'post' => $post,
-                    'title' => $title,
-                    'summary' => $summary,
-                    'headpicture' => $headImg,
-                    'draft' => $draft,
-                    'postid' => $_SESSION["draft"]
-                ));
-                $_SESSION["draft"] = null;
+        try {
+            if (isset($_SESSION["draft"])) {
+                if($update == null) {
+                    $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
+
+                    $update->execute(array(
+                        'username' => $username,
+                        'post' => $post,
+                        'title' => $title,
+                        'summary' => $summary,
+                        'headpicture' => $headImg,
+                        'draft' => $draft,
+                        'postid' => $_SESSION["draft"]
+                    ));
+                }elseif ($update == true) {
+                    $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
+
+                    $update->execute(array(
+                        'username' => $username,
+                        'post' => $post,
+                        'title' => $title,
+                        'summary' => $summary,
+                        'headpicture' => $headImg,
+                        'draft' => $draft,
+                        'postid' => $originalID
+                    ));
+
+                    $delete = $connection->prepare("DELETE FROM blogposts WHERE postid=:postid");
+
+                    $delete->execute(array(
+                       'postid' => $_SESSION["draft"]
+                    ));
+
+                }elseif($update == false){
+                    $insert = $connection->prepare("INSERT INTO blogposts (username, post,title,summary,headpicture, timestamp,draft,editid ) VALUES 
+                                                         (:username, :post,:title,:summary,:headpicture, current_timestamp,:draft,:editid )");
+                    $insert->execute(array(
+                        'username' => $username,
+                        'post' => $post,
+                        'title' => $title,
+                        'summary' => $summary,
+                        'headpicture' => $headImg,
+                        'draft' => $draft,
+                        'editid' => $_SESSION["draft"]
+                    ));
+                }
+                    $_SESSION["draft"] = null;
             } else {
                 $insert = $connection->prepare("INSERT INTO blogposts (username, post,title,summary,headpicture, timestamp,draft ) VALUES 
                                                          (:username, :post,:title,:summary,:headpicture, current_timestamp,:draft )");
