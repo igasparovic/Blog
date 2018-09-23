@@ -12,7 +12,12 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         $draft = false;
         $exists = false;
         $replace= false;
-        $update = null;
+        $update1 = null;
+        if(isset($_SESSION["edit"])){
+            $draftQuery = $connection->prepare("SELECT * FROM blogposts WHERE postid=:postid");
+            $draftQuery->execute(array('postid' => $_SESSION{"draft"}));
+            $draft = $draftQuery->fetch(PDO::FETCH_ASSOC);
+        }
         if(isset($_SESSION["draft"])){
             $picQuery = $connection->prepare("SELECT headpicture FROM blogposts WHERE postid=:postid");
             $picQuery->execute(array('postid' => $_SESSION{"draft"}));
@@ -37,9 +42,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                 $headImg = "images/nophoto.jpg";
             }
         }
-        if(isset($_POST["SaveDraft"]) OR isset($_POST["Preview"]) ){
-            $draft = true;
-        }
+
         if(isset($_FILES["file"]) AND $_FILES["file"]["name"] != null) {
             $picName = $_FILES["file"]["name"];
             $picTmpName = $_FILES["file"]["tmp_name"];
@@ -75,24 +78,35 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                     $error = true;
                 }
             }
-        if ($error == true) {
+        if(isset($_POST["SaveDraft"]) OR isset($_POST["Preview"]) ){
             $draft = true;
-            if(isset($_SESSION["edit"]) AND isset($_POST["SavePost"])){
-                $update = false;
+
+        }
+        if ($error == true ) {
+            $draft = true;
+                if (isset($_SESSION["edit"])) {
+                    $update1 = false;
             }
         }else{
             if(isset($_SESSION["edit"]) AND isset($_POST["SavePost"])){
-                $update = true;
-                $draftQuery = $connection->prepare("SELECT * FROM blogposts WHERE postid=:postid");
-                $draftQuery->execute(array('postid' => $_SESSION{"draft"}));
-                $draft = $draftQuery->fetch(PDO::FETCH_OBJ);
-                $originalID = $draft->editid;
+                if($draft[0]['draft'] == true) {
+                    $original = $draft[0]['editid'];
+                    $update1 = true;
+                }else{
+                    $original = $_SESSION["draft"];
+                    $update1 = true;
+                }
+            }
+            if(isset($_SESSION["edit"]) AND isset($_POST["SaveDraft"])){
+                $update1 = false;
+                echo $update1;
             }
         }
-
+        echo $update1;
         try {
             if (isset($_SESSION["draft"])) {
-                if($update == null) {
+                echo $update1;
+                if($update1 = null) {
                     $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
 
                     $update->execute(array(
@@ -104,7 +118,8 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                         'draft' => $draft,
                         'postid' => $_SESSION["draft"]
                     ));
-                }elseif ($update == true) {
+                }
+                if ($update1 == true) {
                     $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
 
                     $update->execute(array(
@@ -114,16 +129,16 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                         'summary' => $summary,
                         'headpicture' => $headImg,
                         'draft' => $draft,
-                        'postid' => $originalID
+                        'postid' => $original
                     ));
+                        $delete = $connection->prepare("DELETE FROM blogposts WHERE postid=:postid");
 
-                    $delete = $connection->prepare("DELETE FROM blogposts WHERE postid=:postid");
+                        $delete->execute(array(
+                            'postid' => $_SESSION["draft"]
+                        ));
 
-                    $delete->execute(array(
-                       'postid' => $_SESSION["draft"]
-                    ));
-
-                }elseif($update == false){
+                }
+                if($update1 == false){
                     $insert = $connection->prepare("INSERT INTO blogposts (username, post,title,summary,headpicture, timestamp,draft,editid ) VALUES 
                                                          (:username, :post,:title,:summary,:headpicture, current_timestamp,:draft,:editid )");
                     $insert->execute(array(
