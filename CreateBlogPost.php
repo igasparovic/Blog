@@ -31,7 +31,7 @@ if(isset($_GET["d"]) AND $_GET["d"] == 1) {$_SESSION["draft"] = null;}
                         <label>Summary: <br><input type="text" name="summary" maxlength="100" value="<?php if(isset($_SESSION["draft"])){print_r($draft->summary);}?>"></label>
                         <p>
                             <input type="file" name="file" id="file" class="inputfile" />
-                            <label for = "file" id = "filelabel" class="button icon fa-upload"><span>Head picture</span></label><i> &nbsp; only .jpg format allowed</i>
+                            <label for = "file" id = "filelabel" class="button icon fa-upload"><span>Head picture</span></label>
                         </p>
                         <label>Blog:</label>
                         <textarea name="content" id="editor" required>

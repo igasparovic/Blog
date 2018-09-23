@@ -39,7 +39,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
         if(isset($_POST["SaveDraft"]) OR isset($_POST["Preview"]) ){
             $draft = true;
         }
-        if(isset($_FILES["file"])) {
+        if(isset($_FILES["file"]) AND $_FILES["file"]["name"] != null) {
             $picName = $_FILES["file"]["name"];
             $picTmpName = $_FILES["file"]["tmp_name"];
             $picSize = $_FILES["file"]["size"];
