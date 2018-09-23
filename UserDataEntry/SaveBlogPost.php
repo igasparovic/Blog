@@ -78,7 +78,7 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
             $draft = true;
         }
         try {
-            if (isset($_SESSION["draft"])) {
+            if (isset($_SESSION["draft"]) AND !isset($_SESSION["edit"])) {
                 $update = $connection->prepare("UPDATE blogposts SET username=:username, post=:post,title=:title,summary=:summary,headpicture=:headpicture, timestamp=current_timestamp , draft=:draft WHERE postid=:postid");
 
                 $update->execute(array(
