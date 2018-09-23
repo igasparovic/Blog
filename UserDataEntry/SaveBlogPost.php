@@ -200,6 +200,18 @@ if (isset($_SESSION["username"]) AND isset($_POST["content"]) AND trim($_POST["c
                 header("location: ../MyBlog.php");
             }
         }
+    }elseif(isset($_POST["Cancel"])){
+        if(isset($_SESSION["draft"])){
+            $delete = $connection->prepare("DELETE FROM blogposts WHERE postid=:postid");
+
+            $delete->execute(array(
+                'postid' => $_SESSION["draft"]
+            ));
+            header("location: ../ViewDrafts.php");
+        }else{
+            $_SESSION["error"] = "Post was successfully discarded. ";
+            header("location: ../CreateBlogPost.php");
+        }
     }
 }else{
     $_SESSION["error"] = "Blog needs to have at least a title and some body text to be saved as draft.";
